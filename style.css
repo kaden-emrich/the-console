@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+#screen-area {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: black;
+    color: white;
+}
+
+#output-area {
+    white-space: pre-wrap;
+}
+
+#main-input {
+    box-sizing: border-box;
+    width: 500px;
+}
+
+#blinker {
+    opacity: 0;
+}
+
+.blink {
+    opacity: 1;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
